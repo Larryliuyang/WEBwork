@@ -1,0 +1,220 @@
+body{
+  padding: 10px;;
+  margin: 0;
+}
+
+
+.container{
+
+
+  min-width: 500px;
+  max-width: 800px;
+
+  min-height: 500px;
+  max-height: 800px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+
+.container>header{
+  padding: 15px;
+  background-color: #eef;
+  border:1px solid #eee;
+  border-radius: 20px 20px 0 0;
+}
+
+
+
+/* .main{
+  border: 10px solid #eee;
+  min-height: 300px;
+} */
+
+.container>nav{
+  background:linear-gradient(black,#eee);
+
+
+}
+@media (min-width:800px){
+  .container>nav>ul>li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+  .container > nav > a{
+    display:none;
+  }
+
+  .container>nav>ul{
+    margin: 0;
+  }
+
+  li[class='nodeSub']:hover>ul,li[class='CQRSSub']:hover>ul,
+  li[class='ThreeSub']:hover>ul{
+    display: block;
+  }
+
+  ul[class='nodesub'],ul[class='CQRSsub'],ul[class='Threesub']{
+    /* border: 1px solid white; */
+    display: none;
+    list-style: none;
+    margin-left: 120px;
+    margin-top: -30px;
+    padding: 0px;
+    position: absolute;
+    background: linear-gradient(black,#eee)
+  }
+  .container>nav>ul>li:hover>ul{
+    display: block;
+  }
+  .container>nav>ul>li>ul{
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+.container>nav>ul>li>ul{
+  /* display: none; */
+  width: 120px;
+  padding: 0;
+  margin: 0;
+  position:absolute;
+  background: linear-gradient(black,#eee);
+}
+
+
+.container>nav>ul>li>ul>li{
+  list-style: none;
+  margin:0px;
+  padding: 0px;
+}
+
+/* .................My code................. */
+
+
+
+
+.container>nav>ul.open {
+   display:block;
+}
+
+
+
+
+
+/* ...................END.................... */
+
+
+
+
+
+
+
+
+
+.container>nav a{
+  text-decoration: none;/*none; get out a /'s underline*/
+  line-height:30px;
+  padding: 10px;
+
+}
+
+a:link, a:visited, a:active{
+  color:#fff;
+}
+
+a:hover{
+  font-size:20px;
+  color: #eee;
+}
+
+
+.list > .prodcut{
+  text-align: center;
+  width:80px;
+  height: 120px;
+  border: 1px solid #eee;
+  display: inline-block;
+  margin: 2px;
+
+}
+
+.prodcut h4{
+  margin: 3px;
+}
+
+.prodcut>p{
+  margin: 3px;
+  font-size: 9pt;
+  color:#666
+
+}
+
+
+@media (max-width:799px){
+
+
+  .container > nav > a{
+    display:block;
+    padding: 0px;
+  }
+
+  .container>nav>ul{
+    padding-left:10px;
+    display:none;
+  }
+
+  .container>nav>ul>li {
+    list-style: none;
+    position: relative;
+  }
+
+  .container>nav>ul.open {
+     display:block;
+  }
+
+
+
+  .Project>ul,.nodeSub>ul,.CQRSSub>ul,.ThreeSub>ul{
+    display: none;
+    position: relative;
+  }
+
+  .Project>ul.open,.nodeSub>ul.open,.CQRSSub>ul.open,.ThreeSub>ul.open{
+    display: block;
+  }
+  .container>nav>ul>li>ul{
+
+    position:relative;
+
+  }
+
+
+  .list > .prodcut{
+   width: 120px;
+   height: 150px;
+
+  }
+
+  .prodcut h4{
+
+   font-size: 20px;
+
+  }
+
+  .prodcut>p{
+
+    font-size: 12pt;
+
+
+  }
+
+
+
+}
